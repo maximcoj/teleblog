@@ -68,7 +68,7 @@ async function getImageUrl(fileId) {
 
 // Подключение к MongoDB (если доступно)
 let useMongoDB = false;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/teleblog', {
+mongoose.connect(process.env.MONGODB_URI || 'cluster0.xx9tdr0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
